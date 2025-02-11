@@ -12,12 +12,12 @@
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet" />
-
     <title>Document</title>
   </head>
-  <body class="d-flex flex-column min-vh-100">
+
+  <body>
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-sm mb-">
       <div class="container d-flex">
         <img
           width="100px"
@@ -35,11 +35,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a id="active" class="nav-link" aria-current="page" href="#"
-              >Home</a
-            >
-            <a class="nav-link" href="mens.html">Men's clothes</a>
-            <a class="nav-link" href="womens.html">Women's clothes</a>
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+
+            <a id="active" class="nav-link" href="mens.html">Men's clothes</a>
+
+            <a class="nav-link" href="#womens.html">Women's clothes</a>
             <a class="nav-link kidsLink" href="kids.html">Kid's clothes</a>
           </div>
         </div>
@@ -47,104 +47,91 @@
     </nav>
 
     <!-- MAIN -->
-    <main class="">
-      <!-- BRANDS YOU LOVE -->
-      <section>
-        <h2 class="display-5 px-5 pt-3">BRANDS YOU LOVE</h2>
-        <div class="brandImages">
-          <img
-            src="./assets/brand-nike-svgrepo-com.svg"
-            alt="nike logo image" />
-          <img src="./assets/adidas-svgrepo-com.svg" alt="adidas logo image" />
-          <img
-            src="./assets/new-balance-2-logo-svgrepo-com.svg"
-            alt="nike logo image" />
-          <img
-            src="./assets/puma-logo-logo-svgrepo-com.svg"
-            alt="puma logo image" />
-          <img
-            src="./assets/the-north-face-1-logo-svgrepo-com.svg"
-            alt="the north face logo image" />
-          <img
-            src="./assets/emporio-armani-2-logo-svgrepo-com.svg"
-            alt="under armour logo image" />
-          <img
-            src="./assets/gucci-logo-svgrepo-com.svg"
-            alt="gucci logo image" />
-          <img
-            src="./assets/under-armour-logo-svgrepo-com.svg"
-            alt="armani logo image" />
-          <img
-            src="./assets/chanel-2-logo-svgrepo-com.svg"
-            alt="chanel logo image" />
-          <img src="./assets/zara-logo-svgrepo-com.svg" alt="zara logo image" />
-          <img src="./assets/dior-svgrepo-com.svg" alt="dior logo image" />
-          <img
-            src="./assets/cartier-2-logo-svgrepo-com.svg"
-            alt="cartier logo image" />
-        </div>
-      </section>
 
-      <section class="container flex-wrap d-flex gap-5">
-        <!-- MEN'S CARD -->
-        <div class="card h-100">
-          <div class="card" style="width: 18rem">
+    <!-- CLOTHING -->
+    <section>
+      <h3>MENS CLOTHING</h3>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <img
-              src="assets/mens-clothing.jpg"
-              class="card-img-top"
-              alt="mens clothing picture" />
-            <div class="card-body">
-              <h5 class="card-title">SHOP MEN'S</h5>
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw4PDw8PDw8PEA8ODw8PDQ8NDg8OFREWFhURFRUYHSggGBolHRYVITEhJSkrLi4uFx8zODMsNygtLysBCgoKDQ0OGhAQFy0fICU1Ly0rKy0tLSs3Ly8tKzctKy0vLS0tLSstLS0tLSsrLS0tLS0rLS0tLS0tLS0tNy0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIHAwYIBQT/xABKEAABAwIDBAYFBQ0GBwAAAAABAAIDBBEFEiEHEzFRBkFhcYGRIlKhscEUMkJykiMzNVNigqKjsrPC0fAVJDRzdKQIY2STtMPx/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECBAMF/8QAIhEBAQACAgMAAQUAAAAAAAAAAAECEQMSBCExURMUIkJh/9oADAMBAAIRAxEAPwC200kwgE0kIJIukhA7oukhAXRdJK6CV0gldVFtQ6bSmSWgpiY2RODZ3g2fI71NODdfH3y1ZNrDxPpdh9M4smq4mvBILGu3jwQNQQ29vFYKLp1hcxAbWRgm2jw+M8bfSFlQEWGTyatgmdrxETneHCxTdhdQ0EmGUAEamN2UdXHqWe8b/Ty/Dp9jw4XBBHMG4UlQfQvpnPh7mteXPpiRvIrg26szL8CDy42V9McCAQQQQCCOBB61qXbFmkkXSTCqGmgIQCEIQCRTSQJJNJAFRKkkUDQpWSQJCEIBCEIBNJCAQhCASTUUBdU1/YTI6+udIA9xqpSHEdRdmHH6w8lccsga1zjwa1zjbU2AuVWWPSfKZKiaHftD3RvAjyMkJ3TWuAdrYXAN+K8ea/x1t0ePL23ps2H04ytsNNOxffLG0tPo3010Wj9HJa2F7Q90zo3uLbTSB7mWNg4cwV6PSZlZmvE+YsH0IZBE5x00udO3XTQrj6yenbbb7eL02wZjo3zRttKz0rtFszesG3FWfgdKYaWmhPzo4YmOv6wYL+260mGjlMQEu9IfIxtpnMke1uazjmbxFtdVv1LUtlDi0OFnFpDhY3Fj8V0+PdTW3J5Mtu9MyYSUgulymhCaASQhAIQkgSEIQCSZQgkhFkIIJJoQJNCEAhCEAmhJAFRU1EhBCRgcC08HAtPcRYqvKV5he9j7ZmSPabdlv/ngrFWs9NaY5I5mjRhLX24jNax9lvELx5sN47dHBn1uvy8yaRxdG5jQ46EZpBG2+YXubE8L2sONuC9imlcXOL2tbxtlfmDhfQ6gEG3ELWYIt45rgXEZA3KHhljc3PDrXrQ07mEOLpAA0jK6QSB3s6uxcfqR9C60+6eQOcG9ROttNF7mHsswHrccx93wXhYGQ+cDQ5Gue4dhGUe/2LZl0+Ph67OHyM/6mpJBNdLlMJoQgSSZSQJCEIEUIQgEFCEE7ITQgwougpIHdNRTQCYSTCATQmgEk0kCK1jp7jFNT04hmkyPqXBsI7WEOLiepugF+bgvr6Y9J4cLpt/K1z3Pdu4Y26byXKTYu4NAAJJ7NLnRc9dJceqcQnM9S4F1srGNGWOOMEkMaOWp1NybpZuaWXV2sCmxWWF12tErerKeIX3T4/K629MVHH1yTSDPb8lnElVDC9zPmvc22vouc33LO83e4klxJ1c7Vx14krw/b/66b5Pr43vF+nTYcjcMdK1zXtfJUPaAJgOLS1wu4HS9wOGi3zohtFpK8shkBpqp1gGPIMUruUb+f5LrHldUOQse9F9CSR1jS3ivfHCYzUc+edyu66yTCp/oDtNMeaHFZnvZZm4n3RkcziHNkLBmcPm2dYnjcq1sMxOnqmbymminYOLopGvynkbcD2FGX1oQhAkkykgRSTKSAQhNAk0whBNCE0HzlJSKSBITQgEwgJhA00lGWRrWuc4hrWguc4mwa0C5J7LICWRrGuc5zWtaC5znENa1o4kk6AKvelG1SmhDo6ACpl1G9cCKZh5jgZPCw7VX3TbpxPiUj2NcWUYeTFCLtztB9F8vrO67HQdQ0utVzK6HoY7i1RXPMlXM+Z30QTZjByYwaNHcF4xpyPmuIHmvpukqMFnDrB8LXWZ3G/C6am8cO5BgLAeNz3nTyUsqyAIsghey+nD8Qmp5BLBLJDI3g+Nxa7uPMdh0WENQWWQW/wBCtqW8LIMSyscbNbVtGVhP/NaNG/WGnMDirSXKDSr42TY8auh3Mjry0ZbESTcuhIO7PhZzfzQpYN2shNIqCKFKySBJpoAQKyaaEErJoQgwFJSslZAkJoQCaEIBahtWxP5PhU4Bs+pLaVvc+5f+g1/mtvKq3bvUWhoIfWknl+w1rb/rCkFOg6qaxOPvU433v2LQkmhNAlkf1dyhZTf1d3xKCN1mjygXdr2XWEKSCSi/gpMaSbAEnkNVGtjMYaHcXcBe5sECYVu2yfFvk2JRxuNmVQNO6+gznWM9+YAfnLSqJ4D2X5+3qX3TTOa9srdJIpBY8nA5mO9yDqFC+fDqxtRDDOz5s0bJW9z2h3xX0LIEITQKyaEIBCEIJITskgwoTQgVkIQgE0IQJUpt0qg6tpYvxVMXnsMkjvhGFdi522r1Zlxis5RbmFvc2FhP6TnKwag7r5FRoSC5zSQORPNN6+eH5zu5UenLA5vEacxqFAFRhmc3gTbl1eS+reRvHpDI71m8D3hBgCm/q7viVlNI612+mObdfYobsuLQB1a8hqeKDGF9cFKLZpDkHLrPYptljiFgM7+Z4BfDLIXG5N/h3IPsdWhoLYmho9Yj0j/XavNrpCcriST6QuT16LKsVYwlosCSHA2AueBQRj9y9Zzs4a78Ywg29duo+K8aN3Ar1KF/oOHW37oO4cR/XNBfOyis3uFQAm5hfLAe4OzNH2XtW4KtdiVQNxXQX+9zxyj6sjC0fu1ZSyBCEBAWQhCBoQhBJCEIMKEIQCEIQCEIQC5g6Y1O9xHEJOdZUgfVbK5o9jQuni4N1PAanuC5Mmm3jnSfjHOk+0b/ABVgxuXzQ/Od4L6XKTaUCCOa+sk08VuoCKOF1/13sVCCm1QaFkCDLDM5hu029xWSaocezNYm3ivmUn9XcgAUFIJoALaNmtOJMWoWuAI3j3kEXBywvdb2LVwtt2WG2L0Xa6Yf7eRB4vTfAm4diNTSszCFpbJBmNzuXtDmi/XY5m3/ACV5tJLlc09XA93WrQ2/YaAaCsA1O8pJDzt90iB/Wqp2u/moLc2LTtFVVxg3zUzHd+SQAex6t5UBsgrt1isLTwnjmg8cuce1g81f4ShoQhQCaSaAQhCCSEIQYUIQgEIQgEIQg8rpZVbnD6+XhkpKhw+tunW9tly7l0XQu12s3WD1I65nQQDtzStc79Frlz2FYMV+IWydIKRkOG4EG2zTMxCqkPNz542DybG0fmrW5h18ltnTyLcx4HTm4dHhMMjh1h80j3keaDWGp3UQU7KiTVJ3wUQUyeHcgE0IugFsuzuTLiuHnnO1v22uZ/EtauvY6IS5MRw93Kspb9xmaPigura3Qb/B6u2roN3VN0v97eC79AvXOjBfr8l1Z0gpN9R1kPHe01REO90TgPeuVKYkt6rEAqQffhlc+mmhqGEl0EjJm20JLHB2XxtbxXVMMrXta9pu17WvaebXC4PkVygB/Vl0x0JlL8Mw5zjcmkpwTzIjAv7Eo9tNRTUDQhCAQUIQSQhCDEhJCBoQhAIQhBX23CIHC43E2yVkLgPWvFK23kSfBUW1Xjtycf7NgHOuiv8A9icqjgqBlO6VzIm6vleyJv13uDR7SFte1uUHF5Yhwpaekpge6IP/APYvm2cYeajFqBlrtZL8ofyDYWmQH7TWjxWHaI8uxnEjyqC3waxrfgg8FMKITCokmT7lG6CeHcgkCmohMIGV9OGT7ueCT8XLFJ9l4PwXzoA49xQdaHj4rlHFaQQVdXCBlEVRURNHJrJXNaPIBdVR/Nb9Ue5c67UaLc4zW8pTHUN7nxjMfth6kGtBdIbO3XwnD/8AIA8nOHwXOAXRWzJ+bCKE8mSN8pnj4JRs4TQhQCaSaAQhJBNCEIMKEk0AmkhA0IshBXG3V5GHUw6nV0d/CnnIVIq69u7h8gox1mtBHcKea/vCpRWC0NhGHZp62qI+9RMp2Htkdmf42jb9paftJhyYziQ5zNf4Phjf/Erc2NYfucKZIRZ1VNNOb+qDum+Fo7+KrfbPFlxiQ/jKemk8cpZ/Ag0gJpBNUOyCkpIIqTSiyVkE1khbmIHO48epYgV6fR6MPq6Vh4OqIWnuMgB96DqFrbADkAFSe3akDa2jn/HUr4z3xSE+6UeSu5yqPb6z8Fu5Gsb5iD+Sgqhq6E2T/gek+tU/+RIueozwXQmyV18Hpex1S3/cSJRuCEWTUAhCEAhCEEkIuhBhKSEIBNCEAmkhBT+3bF2OfSUQF3RXqpHX4ZwWMb5Bx8QqvpoHSSRxs+fI9kbB1F73BrR5kLbNrcUn9tVIsXF7KZ0YaC47vctbwH5TXI2cYfPHilDJLTSCISODnyU8hYxzo3hjgSNDmLbHq4q7kXVX1hdCymp4KeP5kEUcLe0MaG38bXVJbdRbE4Xeib0cQsCcwtNNx77+xXvZUVt0A/tOH/RxX7fusqRFdB+nD3lG87D5JtQVQ2vv1e5fQ62Rpy63IJzdX9XXyEqYcgmD2H2FPz8h/NIFO6At3+SzUdQ6ORjx6ORzX5rZi2xvcN6zpwWK6lHx9iDrRrw4BzSC1wDmkcC06ghVht6b/dKF3WKtzfB0Lyf2Qt86LSiSgoXjg6kpiOf3pq03axh89f8AJ6SF8LGRH5TIZM+cyEOYxoIBsMpcT3jlri2T3VxxuV1FHs6lf+xt98IiHqz1Lf1hd/EqjrOg+IRi4jZIBr9zlaf2rFXTswwx9LhNLHI1zJH72Z7XCzgXyOIH2cqTKZfKuWOWP2NqQhCrIQhCAQhJBJNCEGBCSEDTSQgaaSEGmdOIwKineAMzo3tJtqQ12lz+cvlikAAaTxBPHXvXrdNoTemlIvG1z438w5+Ut8PRI8ua8d5pN3MC+1ZGBLEwl7QY7AkD6JvZw114Lk5Md519Hhyn6cbxQTGSGJ51LmNLj+Vax9t1S+3eP+/0rvWpAPKaT+atforWb2DLaxicW/mn0gfaR4KrtvMJFVQyfRfTvYPrMluf3jV1YXclcPJj1ysVeEFCFthAoBScoNdqg+gFNQCkEE1kbpZYgsjSg6Y6AuvhWHn/AKdg8iR8Fr+M1bRUzPdcXn3XZ6DcgP6HtXq7NqgHBqJ3qRSg97JXg+5R6MU73Q1EkwsXxOa4uHFzgXPv42PivDlnbUdHBZjvJ8FU70dOtbpQC0MI5RR/shaLTRulkiiH0i0Ecr8T4DMVYKxwT7Xp5V+QIQhdDjCSEIBJNJBNCSaD50IQgEwkhA0wkmEHyYxRfKKeaHre30TyeNWnzAWhVny2DdSBm7ljHpRSxseyZmlyCbi446c1ZKxzQseMr2te3jZwBF+fesZYb9vbi5enqzceV0WaDAHjKC4kEMzBrbEm1iBb5xWh7eqe8NBL6sk8fi5rHAfoHyVqRxhrQ1os1oAAHUBwWj7ZcP32EvkAu6mmhnHcTuneyQnwWsZqPPPLtla59SKkVErbKJW1bMejTcSrZYpBeNlLUvPLeOZuoz4OkDh2sWqq5P8Ah9o7NxCo5up4R+bne79pvkoKdaCNHCzho4cj1hSXtdOaD5NimIQjQNqZHt7GS2laPJ4XiKiQKyRrEFljQdK7OowMIoBYWMJJFtDme4n3r5elE9SZWUlM18cWS8gjiB32e4yB30W8bnTrXqdCoTHhmHMPEUkBPeYwT717axlNt4ZdbvW2v9G8FkgJlnLDIRZrWXdkBtfXnp1czqvfTskmOMxmomedyu6Ek0KskmhCBJFNJBJNJCDGhCEAhCEApBNCAQEIQNa7tF/BGIf5B/bahCDmdyiUkLQSvPYH/gKv/WH9zGhCg0PbH+Gqn/Lpv3DVpYQhUMLLFxCEIOp+j3+Cov8AS037pq9IJIWQ0kIQCEIQJCEIEUIQgEIQg//Z"
+              class="d-block w-200"
+              alt="Nike Tech Fleece" />
+            <div class="carousel-caption d-md-block">
+              <h5>Nike Tech Fleece</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Men's Clothing</li>
-              <li class="list-group-item">Men's footwear</li>
-              <li class="list-group-item">Men's Accessories</li>
-            </ul>
-            <div class="card-body">
-              <a href="mens.html" class="card-link">Men's Section</a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="d-block w-200"
+              alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nike Tracksuit</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
           </div>
         </div>
-        <!-- WOMENS CARD -->
-        <div class="card h-100" style="width: 18rem">
-          <img
-            src="assets/womens-clothing.jpg"
-            class="card-img-top"
-            alt="kids clothing image" />
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-          <div class="card-body">
-            <h5 class="card-title">SHOP WOMEN'S</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Women's Clothing</li>
-            <li class="list-group-item">Women's footwear</li>
-            <li class="list-group-item">Women's Accessories</li>
-          </ul>
-          <div class="card-body">
-            <a href="womens.html" class="card-link">Women's Section</a>
-          </div>
-        </div>
-        <!-- KIDS CARD -->
-        <div class="card h-100" style="width: 18rem">
-          <img
-            src="assets/kids clothes.webp"
-            class="card-img-top"
-            alt="kids clothing image" />
-          <div class="card-body">
-            <h5 class="card-title">SHOP KIDS'</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Kids' Clothing</li>
-            <li class="list-group-item">Kids' footwear</li>
-            <li class="list-group-item">Kids' Accessories</li>
-          </ul>
-          <div class="card-body">
-            <a href="kids.html" class="card-link">Kids' Section</a>
-          </div>
-        </div>
-      </section>
-    </main>
+    <!-- FOOTWEAR -->
+    <section>
+      <h3>MENS FOOTWEAR</h3>
+    </section>
+
+    <!-- ACCESSORIES -->
+    <section><h3>MENS ACCESSORIES</h3></section>
 
     <!-- FOOTER -->
     <footer class="container mt-5">
@@ -207,6 +194,7 @@
     </footer>
 
     <!-- BOOTSTRAP -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
