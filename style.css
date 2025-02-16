@@ -15,28 +15,53 @@
   --lengthLg2: 3rem;
   --lengthLg3: 4rem;
 }
+
 main {
   background-color: var(--tertiaryColor);
 }
+.mensMain {
+  padding: 20px;
+  background: url("https://jadeblue.com/cdn/shop/articles/mens-formal-wear-checklist-for-2024.jpg?v=1722339867&width=1024")
+    no-repeat center/cover fixed;
+}
+.womensMain {
+  padding: 20px;
+  background: url("https://media.licdn.com/dms/image/D4D12AQHxNvvRFv02YQ/article-cover_image-shrink_720_1280/0/1691300118009?e=2147483647&v=beta&t=geUODCbYlYvlsTLsWeblbvElKl37b8vSGauGz0vxRcU")
+    no-repeat center/cover fixed;
+}
+.kidsMain {
+  padding: 20px;
+  background: url("https://miniature.com/cdn/shop/files/Banner_uge10.jpg?v=1736929555&width=1300")
+    no-repeat center/cover fixed;
+}
+main a {
+  background-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Soft black shadow */
+}
+
 nav {
   background-color: var(--textColor);
   position: fixed;
   top: 0px;
 }
-main section {
+.indexMain section {
   background-color: white;
   margin: 20px;
+  border-radius: none;
 }
-main section:nth-child(2) {
-  margin: 20px;
-  padding: 25px;
+.indexMain .cards:nth-child(2) {
   justify-content: center;
+  padding: 20px;
 }
 .brandImages img {
   width: 150px;
   margin: 20px;
 }
 footer {
+  margin-top: 10px;
   background-color: var(--textColor);
 }
 footer p {
@@ -49,7 +74,7 @@ table {
   height: 150px;
 }
 .navbar-nav a:hover {
-  transition: 1s;
+  transition: 0.5s;
   color: var(--tertiaryColor);
   text-decoration: underline;
 }
@@ -57,5 +82,97 @@ table {
   color: var(--tertiaryColor);
   text-decoration: underline;
 }
-.carousel div img {
+.carousel {
+  padding: 5px;
+  height: 100%;
+  background-color: #565360;
+}
+
+.carousel-item h6 {
+  text-align: center;
+  margin-top: 15px;
+  color: var(--disabledColor);
+}
+
+.mensClothing,
+.mensFootwear,
+.mensAccesories,
+.womensClothing,
+.womensFootwear,
+.womensAccessories,
+.kidsClothing,
+.kidsFootwear,
+.kidsAccesories {
+  place-items: center;
+}
+.mensMain,
+.womensMain,
+.kidsMain .carousel {
+  margin: 5px;
+  height: 100%;
+}
+.mensMain h5,
+.kidsMain h5,
+.womensMain h5 {
+  color: var(--textColor);
+  background-color: white;
+  padding: 10px;
+  width: fit-content;
+}
+.carousel img {
+  height: 300px;
+}
+.carousel-item {
+  margin-bottom: 50px;
+}
+.indexMain {
+  justify-content: center;
+  background: url("https://i8.amplience.net/t/jpl/jd_product_list?plu=jd_703582_plc&qlt=85&qlt=92&w=320&h=408&v=1&fmt=auto")
+    no-repeat center/cover fixed;
+}
+
+.card {
+  border: 2px solid gray;
+  border-radius: 0%;
+  text-align: center;
+}
+
+/* FOOTER CSS */
+footer {
+  margin: 5px;
+}
+footer h2 {
+  color: whitesmoke;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+.contactInfo div {
+  gap: 10px;
+}
+.contactInfo > p {
+  margin-left: 31px;
+}
+
+/* MODAL CSS */
+.submit {
+  margin-left: 12px;
+}
+.formElements input {
+  width: 300px;
+  padding: 2px;
+}
+.formName input {
+  margin-left: 6px;
+}
+.formElements label {
+  margin-right: 30px;
+}
+.returnButton {
+  color: whitesmoke;
+  background-color: #1a1a1a;
+}
+@media screen and (max-width: 576px) {
+  .mensMain .mensAccesories {
+    width: 50%;
+  }
 }
