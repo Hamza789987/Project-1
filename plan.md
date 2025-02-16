@@ -1,4 +1,4 @@
-Design an interactive Front-End web application using HTML and CSS based on the principles of user experience design, accessibility and responsivity
+LO1 Design an interactive Front-End web application using HTML and CSS based on the principles of user experience design, accessibility and responsivity
 
     1.1	Design a website that incorporates a main navigation menu and a structured layout
     1.2	Design a website that meets accessibility guidelines (e.g. contrast between background and foreground colours, non-text elements have planned alt text equivalents to cater for the visually impaired)
