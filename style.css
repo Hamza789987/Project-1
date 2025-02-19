@@ -15,7 +15,14 @@
   --lengthLg2: 3rem;
   --lengthLg3: 4rem;
 }
-
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
 main {
   background-color: var(--tertiaryColor);
 }
@@ -50,7 +57,7 @@ nav {
 .indexMain section {
   background-color: white;
   margin: 20px;
-  border-radius: none;
+  border-radius: 0px;
 }
 .indexMain .cards:nth-child(2) {
   justify-content: center;
@@ -87,7 +94,12 @@ table {
   height: 100%;
   background-color: #565360;
 }
-
+.carousel-item {
+  gap: 15px;
+}
+.carousel-item img {
+  width: 300px;
+}
 .carousel-item h6 {
   text-align: center;
   margin-top: 15px;
@@ -137,7 +149,6 @@ table {
   text-align: center;
 }
 
-/* FOOTER CSS */
 footer {
   margin: 5px;
 }
@@ -153,7 +164,6 @@ footer h2 {
   margin-left: 31px;
 }
 
-/* MODAL CSS */
 .submit {
   margin-left: 12px;
 }
