@@ -22,10 +22,8 @@ Users can also contact the business and send a message if they have any enquirie
 	- The header shows the various famous brands sold in the company to attract the eye of the user as he lands on the page.
  	- I stuck to using black and white to keep it consistent and not distracting it from the main focus.
  	- This section provides clear images of brands and its logos that are well known to the user with a big title to attract the user
-  ![Nav & Header](https://github.com/user-attachments/assets/6045763d-b622-422c-aadc-77dc36799fd6)
-
+![Header](https://github.com/user-attachments/assets/f5aa6f0d-dc4a-458e-a6f3-8c49e95227e7)
  
-
 - **The Main Page**
 	- The Main Page in the Home Section: this Main Page shows the various cateogories of clothes sold as well as what different types of clothes from the clothing, footwear, accessories etc.
 ![Main Page ](https://github.com/user-attachments/assets/74bc880a-50b6-4df9-833d-b67961377561)
@@ -49,7 +47,7 @@ Users can also contact the business and send a message if they have any enquirie
 
 - **The Success Page**
 	- This success page displays the confirmation of the enquiry form which has been submitted successfully which is displayed with a big writing to allow the user to receive affirmation with manners of saying "Thank you!".
- - it also shows a sentence that the form has been submitted successfully as well as a button to return back to home page as there is no further need to remain on the success page after the form has been submitted to give extra satisfaction to the user that his form has been succesfully sent to the company and to return to the original page for any products he is interested in.
+ 	- it also shows a sentence that the form has been submitted successfully as well as a button to return back to home page as there is no further need to remain on the success page after the form has been submitted to give extra satisfaction to the user that his form has been succesfully sent to the company and to return to the original page for any products he is interested in.
    ![Success Page](https://github.com/user-attachments/assets/181bae65-ef17-4473-886d-67125db0813b)
 
 
@@ -99,6 +97,6 @@ The live link can be found here - https://hamza789987.github.io/Project-1/
  
 - **Media**
 	- The photos used for all of this website was taken from google and i used it as a jpg to display with no issues in the pixels
- - For the logo, I used a logo maker with specific colours of black and white to complement the colours of the website overall.
-  -  For the icons in the footer, i used font awesome.
-  -  For the pictures of the different Brands, i used the [SVGS](https://www.svgrepo.com/) and linked to it using the relative path
+ 	- For the logo, I used a logo maker with specific colours of black and white to complement the colours of the website overall.
+  	-  For the icons in the footer, i used font awesome.
+  	-  For the pictures of the different Brands, i used the [SVG's](https://www.svgrepo.com/) and linked to it using the relative path
